@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link id="style-link" rel="stylesheet" type="text/css" href="style/light.css">
+	<script type="text/javascript" src="script/app.js"></script>
+	<script type="text/javascript" src="script/switch-theme.js" defer></script>
+	<title>String Analyzer</title>
+</head>
+<body>
+	<h1>Analyse de fréquence des lettres</h1>
+	<div class="textarea-container">
+		<label for="input-zone">Entrez le texte ici :</label>
+		<textarea id="input-zone" onkeyup="updateBars(this);"></textarea>
+	</div>
+	<div id="histogram">
+		
+	</div>
+	<div class="theme-changer" onclick="switchTheme();">
+		<img id="theme-changer-img" src="media/images/moon.png">
+	</div>
+</body>
+</html>
